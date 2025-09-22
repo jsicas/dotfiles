@@ -11,3 +11,6 @@ include "%L"
 <dead_circumflex> <9> : "^9"
 <dead_tilde> <slash> : "~/"
 <dead_circumflex> <braceleft> : "^{"
+<dead_grave> <r> : "`r"
+
+# O comando `xev` é útil para descobrir qual é o nome da tecla. 
