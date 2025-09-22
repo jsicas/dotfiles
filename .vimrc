@@ -1,1 +1,1 @@
-nnoremap <Esc><Esc> :noh<CR>
+nnoremap <Esc><Esc> :noh<CR>  # limpa busca
