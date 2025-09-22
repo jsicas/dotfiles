@@ -25,9 +25,3 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-
-# add TeX Live 2025 to PATH
-export PATH="$HOME/.texlive/2025/bin/x86_64-linux:$PATH"
-export MANPATH="$HOME/.texlive/2025/texmf-dist/doc/man:$MANPATH"
-export INFOPATH="$HOME/.texlive/2025/texmf-dist/doc/info:$INFOPATH"
