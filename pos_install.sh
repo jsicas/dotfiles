@@ -9,7 +9,10 @@ echo '========== Iniciando Pós-Intalação =========='
 # definindo arrays de aplicativos para instalar, extensões para desabilitar...
 
 # apps para instalar
-apt_apps=(gnome-software )
+apt_apps=(
+    gnome-software
+    flatpak gnome-software-plugin-flatpak
+)
 apt_s76=(discord steam)  # depende dos empacotamentos da System76
 
 # extensões para desabilitar
@@ -28,6 +31,9 @@ echo 'Download dos aplicativos...'
 sudo apt install -yqq ${apt_apps[@]}
 sudo apt install -yqq ${apt_s76[@]}
 
+echo 'habilitando flathub'
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo  # adiciona flathub
+
 
 # demais apps =======================
 cd $(mktemp -d)  # vai para um diretório temporário
@@ -39,10 +45,11 @@ wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sud
 sudo add-apt-repository -y "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
 sudo apt install -yqq --no-install-recommends r-base r-base-dev
 
-# Rstudio (Ubuntu 22)
+# Rstudio (Ubuntu 24)
 echo 'Instalando Rstudio...'
 wget -O rstudio.deb https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.09.1-401-amd64.deb
 sudo apt install -yqq ./rstudio.deb
+
 
 # baixando fontes ===================
 # Fira Code
