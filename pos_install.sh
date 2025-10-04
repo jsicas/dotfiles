@@ -12,8 +12,13 @@ echo '========== Iniciando Pós-Intalação =========='
 apt_apps=(
     gnome-software
     flatpak gnome-software-plugin-flatpak
+    steam-installer
+    nvidia-driver-libs:i386 # steam precisa de drivers 32-bits para funcionar
 )
-apt_s76=(discord steam)  # depende dos empacotamentos da System76
+
+flat_apps=(
+    com.discordapp.Discord
+)
 
 # extensões para desabilitar
 gnome_extension_disable=(
@@ -24,15 +29,16 @@ gnome_extension_disable=(
 # atualização e downloads ---------------------------------
 # apps disponíveis no apt ===========
 echo 'Atualizando repositórios...'
+sudo dpkg --add-architecture i386  # habilita 32-bits support para a steam
 sudo apt update -qq
 sudo apt upgrade -yqq
 
 echo 'Download dos aplicativos...'
 sudo apt install -yqq ${apt_apps[@]}
-sudo apt install -yqq ${apt_s76[@]}
 
-echo 'habilitando flathub'
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo  # adiciona flathub
+echo 'habilitando flathub e instalando aplicativos...'
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo  # adiciona flathub
+flatpak install -y flathub ${flat_apps[@]}
 
 
 # demais apps =======================
