@@ -6,3 +6,7 @@
 ln -sf ~/.dotfiles/.XCompose ~/.XCompose          # atalhos de teclado personalizados
 #ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile  # executando no login
 ln -sf ~/.dotfiles/.vimrc ~/.vimrc                # shortcurts personalizados no vim
+
+if command -v rstudio &> /dev/null; then
+    ln -f ~/.dotfiles/rstudio-prefs.json ~/.config/rstudio/rstudio-prefs.json       # configurações do Rstudio
+fi
