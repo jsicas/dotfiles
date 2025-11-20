@@ -1,0 +1,9 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character\
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = false
