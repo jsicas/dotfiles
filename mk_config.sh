@@ -6,8 +6,7 @@ ln -sf ~/.dotfiles/.vimrc ~/.vimrc                # shortcurts personalizados no
 ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile  # executa no login
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc              # executa sempre que o terminal abre
 ln -sf ~/.dotfiles/starship.toml ~/.config/starship.toml
-ln -f  ~/.config/Code/User/settings.json ~/.dotfiles/settings.json  # VSCode
-
+ln -sf ~/.dotfiles/settings.json ~/.config/Code/User/settings.json  # VSCode
 
 # configurações do Rstudio
 if command -v rstudio &> /dev/null; then

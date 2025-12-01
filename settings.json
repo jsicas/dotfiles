@@ -1,8 +1,19 @@
 {
     // General editor settings
+    "editor.fontSize": 16,
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "editor.formatOnSave": true,
+    "window.zoomPerWindow": false,
+    // Appearance settings
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.cursorStyle": "line",
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "top",
+    "workbench.navigationControl.enabled": false,
+    "terminal.integrated.cursorStyleInactive": "none",
     // Settings for LaTeX Workshop extension
     "[latex]": {
         "editor.wordWrap": "on"
@@ -25,17 +36,7 @@
         "*.run.xml"
     ],
     // Other custom settings
-    "explorer.confirmDragAndDrop": false,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorStyleInactive": "none",
     "git.enableSmartCommit": true,
     "git.openRepositoryInParentFolders": "always",
     "git.confirmSync": false,
-    "editor.fontSize": 16,
-    "window.zoomPerWindow": false,
-    "window.menuBarVisibility": "compact",
-    "workbench.activityBar.location": "top",
-    "workbench.navigationControl.enabled": false,
-    "workbench.sideBar.location": "right",
-    "window.commandCenter": false,
 }
