@@ -10,10 +10,10 @@
     "workbench.sideBar.location": "right",
     "terminal.integrated.cursorStyle": "line",
     "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
     "workbench.activityBar.location": "top",
     "workbench.navigationControl.enabled": false,
     "terminal.integrated.cursorStyleInactive": "none",
+    "window.menuBarVisibility": "toggle",
     // Settings for LaTeX Workshop extension
     "[latex]": {
         "editor.wordWrap": "on"
