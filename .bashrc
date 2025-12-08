@@ -28,5 +28,5 @@ unset rc
 ## Starship
 eval "$(starship init bash)"  # habilitando 
 
- ## aliases
- alias rproj='rstudio *.Rproj > /dev/null 2>&1 &'
+## aliases
+alias rproj='rstudio *.Rproj > /dev/null 2>&1 &'
