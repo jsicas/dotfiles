@@ -1,0 +1,42 @@
+{
+    // General editor settings
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
+    "window.zoomPerWindow": false,
+    // Appearance settings
+    "workbench.sideBar.location": "right",
+    "terminal.integrated.cursorStyle": "line",
+    "window.commandCenter": false,
+    "workbench.activityBar.location": "top",
+    "workbench.navigationControl.enabled": false,
+    "terminal.integrated.cursorStyleInactive": "none",
+    "window.menuBarVisibility": "toggle",
+    // Settings for LaTeX Workshop extension
+    "[latex]": {
+        "editor.wordWrap": "on"
+    },
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.method": "glob",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bibl",
+        "*.blg",
+        "*.bbl",
+        "*.fdb_latexmk",
+        "*.fls",
+        "*.log",
+        "*.out",
+        "*.toc",
+        "*.bcf",
+        "*.synctex.gz",
+        "*.run.xml"
+    ],
+    // Other custom settings
+    "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
+    "git.confirmSync": false,
+}

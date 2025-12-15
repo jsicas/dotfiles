@@ -1,0 +1,20 @@
+# Configurações do Starship (https://starship.rs/config/)
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$character\
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = false
+
+[directory]
+truncate_to_repo = true	 # trunca no repositório pai quando for um projeto git
+truncation_length = 0    # não trunca para demais repositórios
+
+[python]
+detect_extensions = []
+detect_files = []
