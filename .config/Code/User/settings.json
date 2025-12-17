@@ -39,4 +39,5 @@
     "git.enableSmartCommit": true,
     "git.openRepositoryInParentFolders": "always",
     "git.confirmSync": false,
+    "workbench.startupEditor": "none",
 }

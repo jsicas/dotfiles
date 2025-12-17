@@ -1,0 +1,48 @@
+// Place your key bindings in this file to override the defaults
+[
+    // My Custom Keybindings
+    {
+        "key": "alt+left",
+        "command": "cursorHome",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+right",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    // Manim Keybindings
+    {
+        "key": "ctrl+[BracketLeft] c",
+        "command": "manim-sideview.renderNewScene"
+    },
+    {
+        "key": "ctrl+' c",
+        "command": "-manim-sideview.renderNewScene"
+    },
+    {
+        "key": "ctrl+[BracketLeft] r",
+        "command": "manim-sideview.run",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+' r",
+        "command": "-manim-sideview.run",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+[BracketLeft] x",
+        "command": "manim-sideview.stop",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+' x",
+        "command": "-manim-sideview.stop",
+        "when": "editorFocus"
+    }
+]
