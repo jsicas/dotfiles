@@ -9,7 +9,6 @@
     "window.zoomPerWindow": false,
     "chat.viewSessions.orientation": "stacked",
     // Appearance settings
-    "workbench.sideBar.location": "right",
     "terminal.integrated.cursorStyle": "line",
     "window.commandCenter": false,
     "workbench.activityBar.location": "top",
