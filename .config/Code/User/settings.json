@@ -1,7 +1,6 @@
 {
     // General editor settings
     "editor.fontSize": 16,
-    "chat.editor.fontSize": 18,  // config da letra do chat de IA
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
