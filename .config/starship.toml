@@ -8,8 +8,8 @@ $python\
 $character\
 """
 
-# Inserts a blank line between shell prompts
-add_newline = false
+continuation_prompt = "> "
+add_newline = false  # inserts a blank line between shell prompts
 
 [directory]
 truncate_to_repo = true	 # trunca no repositório pai quando for um projeto git
