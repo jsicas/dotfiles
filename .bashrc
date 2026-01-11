@@ -29,5 +29,5 @@ unset rc
 eval "$(starship init bash)"  # habilitando 
 
 ## aliases
-alias rproj='rstudio *.Rproj > /dev/null 2>&1 &'
+alias rproj='rstudio *.Rproj 1>&- 2>&- &'
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
