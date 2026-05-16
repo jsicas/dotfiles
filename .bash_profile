@@ -10,4 +10,6 @@ fi
 export PATH="$HOME/.texlive/2025/bin/x86_64-linux:$PATH"
 export MANPATH="$HOME/.texlive/2025/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="$HOME/.texlive/2025/texmf-dist/doc/info:$INFOPATH"
+
+## mdBook
 . "$HOME/.cargo/env"  # para a utilização de rust (mdBook)
