@@ -31,7 +31,8 @@ eval "$(starship init bash)"  # habilitando
 ## Aliases
 alias rproj='rstudio *.Rproj 1>&- 2>&- &'
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-__git_complete dotfile git  # autocomplete para alias dotfile
+source /usr/share/bash-completion/completions/git  # necessário para próxima linha
+__git_complete dotfile __git_main  # autocomplete para alias dotfile
 
 ## Embelezando o modo debug (set -x)
 PS4='Debug:  '
