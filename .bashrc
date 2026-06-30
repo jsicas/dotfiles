@@ -26,9 +26,11 @@ unset rc
 
 # User config
 ## Starship
-eval "$(starship init bash)"  # habilitando 
+
+[[ "$STARSHIP_DISABLE" = "true"  ]] || eval "$(starship init bash)"  # habilitando 
 
 ## Aliases
+alias disable_starship='STARSHIP_DISABLE=true bash'
 alias rproj='rstudio *.Rproj 1>&- 2>&- &'
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 source /usr/share/bash-completion/completions/git  # necessário para próxima linha
