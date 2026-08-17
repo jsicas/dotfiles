@@ -24,17 +24,20 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# User config
-## Starship
+# User config -------------------------
 
+## Starship
 [[ "$STARSHIP_DISABLE" = "true"  ]] || eval "$(starship init bash)"  # habilitando 
+
+## Changing default editor
+export EDITOR=vim  # eg. modifica comando crontab
 
 ## Aliases
 alias disable_starship='STARSHIP_DISABLE=true bash'
 alias rproj='rstudio *.Rproj 1>&- 2>&- &'
 alias dotfile="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-source /usr/share/bash-completion/completions/git  # necessário para próxima linha
-__git_complete dotfile __git_main  # autocomplete para alias dotfile
+source /usr/share/bash-completion/completions/git	# necessário para próxima linha
+__git_complete dotfile __git_main  					# autocomplete para alias dotfile
 
 ## Embelezando o modo debug (set -x)
 PS4='Debug:  '
